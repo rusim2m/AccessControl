@@ -1,0 +1,17 @@
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\HashGen.csproj.AssemblyReference.cache
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\HashGen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\HashGen.AssemblyInfoInputs.cache
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\HashGen.AssemblyInfo.cs
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\HashGen.csproj.CoreCompileInputs.cache
+C:\Users\rusia\access-control-platform\tools\hashgen\bin\Debug\net9.0\HashGen.exe
+C:\Users\rusia\access-control-platform\tools\hashgen\bin\Debug\net9.0\HashGen.deps.json
+C:\Users\rusia\access-control-platform\tools\hashgen\bin\Debug\net9.0\HashGen.runtimeconfig.json
+C:\Users\rusia\access-control-platform\tools\hashgen\bin\Debug\net9.0\HashGen.dll
+C:\Users\rusia\access-control-platform\tools\hashgen\bin\Debug\net9.0\HashGen.pdb
+C:\Users\rusia\access-control-platform\tools\hashgen\bin\Debug\net9.0\BCrypt.Net-Next.dll
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\HashGen.csproj.Up2Date
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\HashGen.dll
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\refint\HashGen.dll
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\HashGen.pdb
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\HashGen.genruntimeconfig.cache
+C:\Users\rusia\access-control-platform\tools\hashgen\obj\Debug\net9.0\ref\HashGen.dll

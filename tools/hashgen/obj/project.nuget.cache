@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KuPX2m3pT9A=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\rusia\\access-control-platform\\tools\\hashgen\\HashGen.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rusia\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
