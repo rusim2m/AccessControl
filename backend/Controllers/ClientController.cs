@@ -88,7 +88,7 @@ public class ClientController : ControllerBase
         _context.Employees.Add(employee);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetEmployee), new { id = employee.Id }, new EmployeeResponse
+        return Ok(new EmployeeResponse
         {
             Id = employee.Id,
             Name = employee.Name,
@@ -137,7 +137,7 @@ public class ClientController : ControllerBase
         _context.Employees.Remove(employee);
         await _context.SaveChangesAsync();
 
-        return NoContent();
+        return Ok();
     }
 
     [HttpGet("zones")]
@@ -195,7 +195,7 @@ public class ClientController : ControllerBase
         _context.Zones.Add(zone);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetZone), new { id = zone.Id }, new ZoneResponse
+        return Ok(new ZoneResponse
         {
             Id = zone.Id,
             Name = zone.Name,
@@ -242,7 +242,7 @@ public class ClientController : ControllerBase
         _context.Zones.Remove(zone);
         await _context.SaveChangesAsync();
 
-        return NoContent();
+        return Ok();
     }
 
     [HttpGet("cards")]
@@ -290,7 +290,7 @@ public class ClientController : ControllerBase
 
         var org = await _context.Organizations.FindAsync(orgId);
 
-        return CreatedAtAction(nameof(GetCards), new { id = card.Id }, new CardResponse
+        return Ok(new CardResponse
         {
             Id = card.Id,
             UID = card.UID,
@@ -488,7 +488,7 @@ public class ClientController : ControllerBase
         _context.Schedules.Add(schedule);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetSchedule), new { id = schedule.Id }, new ScheduleResponse
+        return Ok(new ScheduleResponse
         {
             Id = schedule.Id,
             Name = schedule.Name,
@@ -547,7 +547,7 @@ public class ClientController : ControllerBase
         _context.Schedules.Remove(schedule);
         await _context.SaveChangesAsync();
 
-        return NoContent();
+        return Ok();
     }
 
     [HttpGet("access-rules")]
@@ -614,7 +614,7 @@ public class ClientController : ControllerBase
         _context.AccessRules.Add(rule);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetAccessRules), new { id = rule.Id }, new AccessRuleResponse
+        return Ok(new AccessRuleResponse
         {
             Id = rule.Id,
             EmployeeId = rule.EmployeeId,
@@ -694,18 +694,13 @@ public class ClientController : ControllerBase
         _context.AccessRules.Remove(rule);
         await _context.SaveChangesAsync();
 
-        return NoContent();
+        return Ok();
     }
 
     [HttpGet("access-logs")]
     public async Task<IActionResult> GetAccessLogs()
     {
         var orgId = GetOrganizationId();
-
-        var orgZoneIds = await _context.Zones
-            .Where(z => z.OrganizationId == orgId)
-            .Select(z => z.Id)
-            .ToListAsync();
 
         var readerIds = await _context.Readers
             .Where(r => r.OrganizationId == orgId)

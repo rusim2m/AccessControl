@@ -18,7 +18,7 @@ public class JwtService
     public string GenerateToken(User user)
     {
         var jwtSettings = _configuration.GetSection("Jwt");
-        var key = jwtSettings["Key"] ?? throw new InvalidOperationException("JWT Key is not configured.");
+        var key = jwtSettings["Key"];
         var issuer = jwtSettings["Issuer"] ?? "AccessControlPlatform";
         var audience = jwtSettings["Audience"] ?? "AccessControlPlatformUsers";
         var expiryHours = int.TryParse(jwtSettings["ExpiryHours"], out var hours) ? hours : 8;

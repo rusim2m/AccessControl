@@ -141,4 +141,4 @@ C:\Users\rusia\access-control-platform\backend\obj\Debug\net8.0\refint\AccessCon
 C:\Users\rusia\access-control-platform\backend\obj\Debug\net8.0\AccessControlPlatform.pdb
 C:\Users\rusia\access-control-platform\backend\obj\Debug\net8.0\AccessControlPlatform.genruntimeconfig.cache
 C:\Users\rusia\access-control-platform\backend\obj\Debug\net8.0\ref\AccessControlPlatform.dll
-C:\Users\rusia\access-control-platform\backend\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+c:\Users\rusia\access-control-platform\backend\obj\Debug\net8.0\AccessControlPlatform.sourcelink.json

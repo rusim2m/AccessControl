@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rusia\\access-control-platform\\backend\\AccessControlPlatform.csproj": {}
+    "c:\\Users\\rusia\\access-control-platform\\backend\\AccessControlPlatform.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rusia\\access-control-platform\\backend\\AccessControlPlatform.csproj": {
+    "c:\\Users\\rusia\\access-control-platform\\backend\\AccessControlPlatform.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rusia\\access-control-platform\\backend\\AccessControlPlatform.csproj",
+        "projectUniqueName": "c:\\Users\\rusia\\access-control-platform\\backend\\AccessControlPlatform.csproj",
         "projectName": "AccessControlPlatform",
-        "projectPath": "C:\\Users\\rusia\\access-control-platform\\backend\\AccessControlPlatform.csproj",
+        "projectPath": "c:\\Users\\rusia\\access-control-platform\\backend\\AccessControlPlatform.csproj",
         "packagesPath": "C:\\Users\\rusia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rusia\\access-control-platform\\backend\\obj\\",
+        "outputPath": "c:\\Users\\rusia\\access-control-platform\\backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

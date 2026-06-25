@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AccessControlPlatform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1a10ca2af5a3a221e6ae4ec57c72ca6bda8b2087")]
 [assembly: System.Reflection.AssemblyProductAttribute("AccessControlPlatform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AccessControlPlatform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

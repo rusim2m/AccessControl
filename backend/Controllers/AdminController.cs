@@ -76,7 +76,7 @@ public class AdminController : ControllerBase
 
         _logger.LogInformation("Created dealer {Email}", user.Email);
 
-        return CreatedAtAction(nameof(GetDealers), new { id = user.Id }, new UserResponse
+        return Ok(new UserResponse
         {
             Id = user.Id,
             Name = user.Name,
@@ -134,7 +134,7 @@ public class AdminController : ControllerBase
         _context.Users.Remove(user);
         await _context.SaveChangesAsync();
 
-        return NoContent();
+        return Ok();
     }
 
     [HttpGet("organizations")]

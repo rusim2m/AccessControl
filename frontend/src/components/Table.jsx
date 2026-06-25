@@ -1,5 +1,5 @@
 import React from 'react'
-import { Inbox } from 'lucide-react'
+import { Inbox, Loader2 } from 'lucide-react'
 
 export default function Table({ columns, data, loading, emptyMessage = 'No data found', keyField = 'id' }) {
   if (loading) {
@@ -14,15 +14,11 @@ export default function Table({ columns, data, loading, emptyMessage = 'No data 
             </tr>
           </thead>
           <tbody>
-            {[...Array(5)].map((_, i) => (
-              <tr key={i} className="border-t border-gray-100 dark:border-gray-700">
-                {columns.map((col) => (
-                  <td key={col.key}>
-                    <div className="skeleton h-4 rounded w-full max-w-[120px]" />
-                  </td>
-                ))}
-              </tr>
-            ))}
+            <tr>
+              <td colSpan={columns.length} className="text-center py-12">
+                <Loader2 className="animate-spin text-primary-500 mx-auto" size={28} />
+              </td>
+            </tr>
           </tbody>
         </table>
       </div>

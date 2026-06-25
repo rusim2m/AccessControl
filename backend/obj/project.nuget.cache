@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j1K0qPe/ZXg=",
+  "dgSpecHash": "byBy/C5Oe3k=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rusia\\access-control-platform\\backend\\AccessControlPlatform.csproj",
+  "projectFilePath": "c:\\Users\\rusia\\access-control-platform\\backend\\AccessControlPlatform.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rusia\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\rusia\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

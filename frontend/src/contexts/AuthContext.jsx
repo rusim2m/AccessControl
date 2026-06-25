@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react'
 import { jwtDecode } from 'jwt-decode'
-import axios from 'axios'
+import api from '../utils/api'
 
 const AuthContext = createContext(null)
 
@@ -41,7 +41,7 @@ export function AuthProvider({ children }) {
   }, [])
 
   const login = useCallback(async (email, password) => {
-    const response = await axios.post('/api/auth/login', { email, password })
+    const response = await api.post('/auth/login', { email, password })
     const { token: newToken, role, name, organizationId, dealerId } = response.data
 
     localStorage.setItem('token', newToken)

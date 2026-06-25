@@ -74,7 +74,7 @@ public class DealerController : ControllerBase
 
         var dealer = await _context.Users.FindAsync(dealerId);
 
-        return CreatedAtAction(nameof(GetOrganizations), new { id = org.Id }, new OrganizationResponse
+        return Ok(new OrganizationResponse
         {
             Id = org.Id,
             Name = org.Name,
@@ -127,7 +127,7 @@ public class DealerController : ControllerBase
         _context.Organizations.Remove(org);
         await _context.SaveChangesAsync();
 
-        return NoContent();
+        return Ok();
     }
 
     [HttpGet("clients")]
@@ -189,7 +189,7 @@ public class DealerController : ControllerBase
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetClients), new { id = user.Id }, new UserResponse
+        return Ok(new UserResponse
         {
             Id = user.Id,
             Name = user.Name,
@@ -270,7 +270,7 @@ public class DealerController : ControllerBase
         _context.Users.Remove(user);
         await _context.SaveChangesAsync();
 
-        return NoContent();
+        return Ok();
     }
 
     [HttpGet("readers")]
@@ -483,7 +483,7 @@ public class DealerController : ControllerBase
         _context.Cards.Add(card);
         await _context.SaveChangesAsync();
 
-        return CreatedAtAction(nameof(GetCards), new { id = card.Id }, new CardResponse
+        return Ok(new CardResponse
         {
             Id = card.Id,
             UID = card.UID,
